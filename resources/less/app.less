@@ -1,3 +1,51 @@
 @import "../../bower_components/bootstrap/less/bootstrap";
 @import "../../bower_components/bootstrap/less/theme";
 
+@import "../../bower_components/less-elements/elements";
+@import "variables";
+@import "../../bower_components/fontawesome/less/font-awesome.less";
+@import "colors";
+
+.box4 {
+  span {
+    
+ ul{
+   
+   li{
+     
+  color:orange;
+  font-weight:bold;
+     }
+   }
+   }
+}
+
+.mybox {
+  
+  height: @box-height;
+  border: @box-border-size @box-border-color @borderstyle;
+  
+}
+
+div.box1 {
+  
+  .mybox;
+  background-color: @corporate-color;
+  
+}
+
+div.box2 {
+  
+ .mybox;
+  background-color: lighten(@corporate-color, 30%);
+  .border-radius(@box-border-radius, @box-border-radius, @box-border-radius, @box-border-radius);
+  .gradient(#FFF, @mycolor, lighten(@mycolor, 30%));
+}
+
+div.box3 {
+  
+ .mybox;
+  background-color:  lighten(@corporate-color, 60%);
+}
+
+
